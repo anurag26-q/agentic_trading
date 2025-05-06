@@ -1,5 +1,5 @@
 vector_db:
-  index_name: 'langchain-test-index'
+  index_name: 'trading-bot'
 
 embedding_model:
   provider: 'google'
