@@ -9,8 +9,8 @@ data_models/models.py
 exception/__init__.py
 exception/exceptions.py
 fall_back_data/__init__.py
-logs/__init__.py
-logs/logger.py
+log/__init__.py
+log/logger.py
 toolkit/__init__.py
 toolkit/tool.py
 utils/__init__.py

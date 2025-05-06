@@ -5,7 +5,7 @@ tavily-python
 polygon
 dotenv
 langchain_google_genai
-config
+langchain_community
 
 
 
