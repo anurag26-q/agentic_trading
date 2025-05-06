@@ -1,11 +1,3 @@
-### keys needs to be mention inside the .env
-```
-POLYGON_API_KEY
-GOOGLE_API_KEY
-TAVILY_API_KEY
-GROQ_API_KEY
-PINECONE_API_KEY
-```
 
 ### for running the fastapi endpoint
 ```
