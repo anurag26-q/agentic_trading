@@ -40,10 +40,10 @@ class DataIngestion:
         requried_var=[
             'GOOGLE_API_KEY','PINECONE_API_KEY'
         ]
-        missing_vas=[var for var in requried_var if os.getenv(var) is None]
+        missing_var=[var for var in requried_var if os.getenv(var) is None]
 
-        if missing_vas:
-            raise EnvironmentError(f'Missing environment variable : {missing_vas}')
+        if missing_var:
+            raise EnvironmentError(f'Missing environment variable : {missing_var}')
         
         self.google_api_key=os.getenv('GOOGLE_API_KEY')
         self.pinecone_api_key=os.getenv('PINECONE_API_KEY')
@@ -53,7 +53,7 @@ class DataIngestion:
         Load documnets from uploaded PDF and Docs file
         '''
         documnets =[]
-        for uploaded_file in  uploaded_files:
+        for uploaded_file in uploaded_files:
             if uploaded_file.name.endswith('.pdf'):
                 with tempfile.NamedTemporaryFile(delete=False,suffix='.pdf') as tempfile:
                     tempfile.write(uploaded_file.read())
