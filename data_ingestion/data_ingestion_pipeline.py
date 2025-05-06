@@ -3,7 +3,10 @@ import tempfile
 
 
 from typing import List
+from uuid import uuid4
 from dotenv import load_dotenv
+
+
 from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader,Docx2txtLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -12,7 +15,7 @@ from utils.model_loader import ModelLoader
 from utils.model_loader import load_config
 from pinecone import ServerlessSpec
 from pinecone import Pinecone
-from uuid import uuid4
+
 
 
 
