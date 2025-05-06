@@ -9,6 +9,8 @@ langchain_community
 streamlit
 fastapi[all]
 uvicorn
+pinecone
+langchain_pinecone
 
 
 
