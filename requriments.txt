@@ -6,3 +6,7 @@ polygon
 dotenv
 langchain_google_genai
 config
+
+
+
+-e .

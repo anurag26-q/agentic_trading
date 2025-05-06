@@ -5,5 +5,5 @@ setup(
     version='0.0.1',
     author='Anurag',
     packages=find_packages(),
-    install_requires=['langchain','langgraph','lancedb','tavily-python','ploygon']
+    install_requires=['langchain','langgraph','lancedb','tavily-python','polygon']
 )
