@@ -38,10 +38,13 @@ class GrapgBuilder:
 
         graph_builder.add_conditional_edges('chatbot',tools_condition)
         graph_builder.add_edge('tools','chatbot')
-        graph_builder.add_edges(START,'chatbot')
+        graph_builder.add_edge(START,'chatbot')
+
+        self.graph=graph_builder.compile()
 
 
     def get_graph(self):
-        pass
+        if self.graph is None:
+            raise ValueError("Grapg not built s")
 
 
