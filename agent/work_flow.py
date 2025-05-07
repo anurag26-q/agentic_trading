@@ -45,6 +45,6 @@ class GrapgBuilder:
 
     def get_graph(self):
         if self.graph is None:
-            raise ValueError("Grapg not built s")
+            raise ValueError("Grapg not built")
 
 
